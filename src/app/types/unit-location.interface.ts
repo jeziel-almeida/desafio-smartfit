@@ -1,4 +1,4 @@
-export interface Location {
+export interface UnitLocation {
   id: number;
   title: string;
   content: string;
