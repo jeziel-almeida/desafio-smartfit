@@ -1,0 +1,16 @@
+<div class="card">
+  <span [ngClass]="{opened: unit.opened }">
+    {{ unit.opened ? 'Aberto' : 'Fechado' }}
+  </span>
+
+  <h3>{{ unit.title }}</h3>
+
+  <p>{{ unit.content }}</p>
+
+  <ul>
+    <li *ngFor="let schedule of unit.schedules">
+      <strong>{{ schedule.weekdays }}</strong>
+      {{ schedule.hour }}
+    </li>
+  </ul>
+</div>
