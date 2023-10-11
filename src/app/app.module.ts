@@ -11,6 +11,7 @@ import { FormComponent } from './components/form/form.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CardComponent } from './components/card/card.component';
 import { LegendComponent } from './components/legend/legend.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LegendComponent } from './components/legend/legend.component';
     FormComponent,
     CardsListComponent,
     CardComponent,
-    LegendComponent
+    LegendComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

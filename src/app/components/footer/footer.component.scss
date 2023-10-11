@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  background-color: var(--dark-grey);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: white;
+}
+
+footer img {
+  height: 50px;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.78);
+}
