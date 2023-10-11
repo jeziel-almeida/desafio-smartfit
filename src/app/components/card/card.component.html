@@ -5,7 +5,16 @@
 
   <h3>{{ unit.title }}</h3>
 
-  <p>{{ unit.content }}</p>
+  <p [innerHTML]="unit.content"></p>
+
+  <div class="divider"></div>
+
+  <div class="img-wrapper">
+    <img *ngIf="unit.mask" [src]="'assets/images/png/' + unit.mask + '-mask.png'" />
+    <img *ngIf="unit.towel" [src]="'assets/images/png/' + unit.towel + '-towel.png'" />
+    <img *ngIf="unit.fountain" [src]="'assets/images/png/' + unit.fountain + '-fountain.png'" />
+    <img *ngIf="unit.locker_room" [src]="'assets/images/png/' + unit.locker_room + '-lockerroom.png'" />
+  </div>
 
   <ul>
     <li *ngFor="let schedule of unit.schedules">
